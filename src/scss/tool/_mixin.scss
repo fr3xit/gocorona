@@ -1,0 +1,13 @@
+// Flex
+@mixin flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Center
+
+@mixin center_f {
+	@include flex;
+	justify-content: center;
+	align-items: center;
+}
