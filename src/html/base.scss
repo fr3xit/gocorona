@@ -1,0 +1,67 @@
+// Logo
+.logo {
+	&__link {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 799.98px) {
+			flex-direction: column;
+		}
+	}
+
+	&__img {
+		min-width: 40px;
+
+		@media (max-width: 699.98px) {
+			min-width: 100px;
+			height: auto;
+		}
+	}
+
+	&__title {
+		font-size: em(24);
+		font-weight: 700;
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+
+	&__accent {
+		display: inline-block;
+
+		@media (max-width: 699.98px) {
+			color: $c-secondary !important;
+		}
+
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+}
+
+// Button
+
+.btn {
+	display: inline-block;
+	padding: 15px 30px;
+
+	color: $c-light;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	background-color: $c-primary;
+	border-radius: 5px;
+
+	&--blue {
+		background-color: $c-secondary;
+	}
+}
+
+// Accent
+.accent {
+	color: $c-primary;
+
+	&--blue {
+		color: $c-secondary;
+	}
+}

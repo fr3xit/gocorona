@@ -14,59 +14,45 @@
 		<div class="page">
 			<header class="header-aut">
 				<div class="header container">
-					<div class="header__main">
-						<div class="logo">
-							<a class="logo__link" href="#" title="☣">
-								<picture>
-									<!-- <source
-										srcset="./src/img/logo-blue.svg"
-										media="(max-width: 699.98px)"
-									/> -->
-									<img
-										class="logo__img"
-										src="./src/img/logo.svg"
-										alt="GoCorona"
-									/>
-								</picture>
-								<h1 class="header__title logo__title">
-									go<span class="logo__accent accent">corona</span>
-								</h1>
-							</a>
-						</div>
-
-						<nav id="burger-open" class="header__menu nav-bar">
-							<ul id="burger-close" class="nav-bar__list">
-								<li class="nav-bar__item">
-									<a class="nav-bar__link" href="#">home</a>
-								</li>
-								<li class="nav-bar__item">
-									<a class="nav-bar__link" href="#">features</a>
-								</li>
-								<li class="nav-bar__item">
-									<a class="nav-bar__link" href="#">support</a>
-								</li>
-								<li class="nav-bar__item">
-									<a class="nav-bar__link" href="#">contact us</a>
-								</li>
-							</ul>
-						</nav>
-
-						<div class="header__btn-box">
-							<a class="header__btn btn btn--blue" href="#">download</a>
-						</div>
+					<div class="header__logo logo">
+						<a class="logo__link" href="./index.html">
+							<img class="logo__img" src="./src/img/logo.svg" alt="Go corona" />
+							<h2 class="header__title logo__title">
+								go<span class="logo__accent accent">corona</span>
+							</h2>
+						</a>
 					</div>
 
-					<div class="header__burger-wrap">
-						<div class="header__burger burger burger--open">
-							<a class="burger__link" href="#burger-close">
-								<span class="burger__line"></span>
-							</a>
-						</div>
+					<nav class="nav-bar">
+						<ul class="nav-bar__list">
+							<li class="nav-bar__item">
+								<a class="nav-bar__link" href="#">home</a>
+							</li>
+							<li class="nav-bar__item">
+								<a class="nav-bar__link" href="#">features</a>
+							</li>
+							<li class="nav-bar__item">
+								<a class="nav-bar__link" href="#">support</a>
+							</li>
+							<li class="nav-bar__item">
+								<a class="nav-bar__link" href="#">contact us</a>
+							</li>
+						</ul>
+					</nav>
 
-						<div class="header__burger burger burger--close">
-							<a class="burger__link" href="#burger-open">
-								<span class="burger__line"></span>
-							</a>
+					<div class="header__btn-box">
+						<a class="header__btn btn btn--blue" href="#">download</a>
+
+						<div class="burger-wrap">
+							<div class="header__burger burger burger--open">
+								<a class="burger__link" href="#burger-close">
+									<span class="burger__line"></span>
+								</a>
+							</div>
+
+							<div class="header__burger burger burger--close">
+								<a class="burger__link" href="#burger-open"></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -107,8 +93,6 @@
 					</div>
 				</section>
 			</main>
-
-			<footer class="footer">footer</footer>
 		</div>
 		<script src="./src/js/index.js"></script>
 	</body>
