@@ -1,12 +1,12 @@
 // Layout
-$container: 1000px;
+$container: var(--container);
 
 // Colors
-$с-dark: #000;
-$с-light: #FAFBFD;
-$с-grey: #616161;
-$с-grey_light: #B0B0B0;
-$с-primary: #EC5863;
-$с-primary_dark: #000;
-$с-secondary: #587EEC;
-$с-secondary_dark: #000;
+$c-dark: var(--c-dark);
+$c-light: var(--c-light);
+$c-grey: var(--c-grey);
+$c-grey_light: var(--c-grey_light);
+$c-primary: var(--c-p);
+$c-primary_dark: var(--c-p_dark);
+$c-secondary: var(--c-s);
+$c-secondary_dark: var(--c-s_dark);
