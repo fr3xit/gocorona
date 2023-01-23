@@ -4,12 +4,39 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+	z-index: 1000;
 
 	width: 100%;
-	z-index: 1000;
+
+	&:target {
+		background-color: $c-primary;
+
+		.nav-bar__list {
+			display: flex;
+
+			overflow: auto;
+		}
+
+		.header__btn-box {
+			display: flex;
+		}
+
+		.logo__accent {
+			color: $c-secondary;
+		}
+
+		.burger--open {
+			display: none;
+		}
+
+		.burger--close {
+			display: flex;
+		}
+	}
 }
 
 .header {
+	position: relative;
 	@include flex;
 	align-items: center;
 	justify-content: space-between;
@@ -18,6 +45,12 @@
 
 	@media (max-width: 699.98px) {
 		flex-wrap: wrap;
+	}
+
+	@media (max-width: 499.98px) {
+		justify-content: center;
+		align-content: space-between;
+		height: calc(100% - 50px);
 	}
 
 	&__title {
@@ -31,12 +64,31 @@
 	}
 
 	&__btn-box {
-		display: flex;
+		@media (max-width: 699.98px) {
+			margin-right: 25%;
+		}
+
+		@media (max-width: 499.98px) {
+			display: none;
+			align-items: center;
+			flex: 1 1 100%;
+			margin: 0px;
+
+			text-align: center;
+		}
 	}
+
+	&__btn {}
 }
 
 // Logo
 .logo {
+	&__link {
+		@media (max-width: 499.98px) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 
 	&__title {
 		font-size: em(24);
@@ -63,6 +115,10 @@
 		order: 1;
 	}
 
+	@media (max-width: 499.98px) {
+		order: 0;
+	}
+
 	font-family: "Raleway",
 	sans-serif;
 
@@ -72,12 +128,12 @@
 		column-gap: 40px;
 
 		@media (max-width: 699.98px) {
+			display: none;
 			flex-direction: column;
 			align-items: center;
 			row-gap: 30px;
 			margin-top: 50px;
 		}
-
 	}
 
 	&__item {
@@ -90,8 +146,20 @@
 }
 
 // Burger
+
 .burger-wrap {
 	@include center_f;
+	display: none;
+
+	@media (max-width: 699.98px) {
+		display: flex;
+	}
+
+	@media (max-width: 499.98px) {
+		position: absolute;
+		top: 0px;
+		right: 30px;
+	}
 }
 
 .burger {
@@ -103,9 +171,6 @@
 		}
 	}
 
-	&--close {
-		// display: none;
-	}
 
 	&__link {
 		position: relative;
