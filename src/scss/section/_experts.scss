@@ -1,0 +1,92 @@
+.experts {
+	background-color: var(--c-light);
+
+	&__inner {
+		padding: 100px 0;
+	}
+
+	&__content-box {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+
+		@media (max-width: 900.98px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__content {
+		flex: 1 0 50%;
+	}
+
+	&__statistics {
+		position: relative;
+
+		margin: 0 auto;
+		margin-bottom: 80px;
+		max-width: 660px;
+
+	}
+
+	&__statistics-inner {
+		position: relative;
+		z-index: 10;
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 70px;
+		padding: 30px 80px;
+
+		border-radius: 16px;
+		background-color: #fff;
+		font-weight: 700;
+	}
+
+	&__statistics-number {
+		margin-bottom: 10px;
+
+		font-size: 36px;
+		color: var(--c-p);
+		text-align: center;
+	}
+
+	&__statistics-text {
+		text-transform: uppercase;
+	}
+
+	&__statistics-decor-one {
+		left: -25px;
+		bottom: -30px;
+
+		transform: rotate(45deg);
+	}
+
+	&__statistics-decor-two {
+		top: -40px;
+		left: 40%;
+
+		transform: rotate(25deg);
+	}
+
+	&__statistics-decor-three {
+		top: -10px;
+		right: -50px;
+
+		transform: rotate(-25deg);
+	}
+
+	&__video-box {
+		flex: 0 1 50%;
+		cursor: pointer;
+
+		@media (max-width: 900.98px) {
+			flex: 1 1 100%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

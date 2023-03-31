@@ -155,6 +155,8 @@ button {
   position: absolute;
   background-color: var(--c-p);
   border-radius: 16px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .decor_small {
   min-width: 70px;
@@ -557,4 +559,98 @@ button {
 .health__decor-three {
   right: -30px;
   bottom: 25%;
+}
+
+.experts {
+  background-color: var(--c-light);
+}
+.experts__inner {
+  padding: 100px 0;
+}
+.experts__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 900.98px) {
+  .experts__content-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.experts__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+.experts__statistics {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  max-width: 660px;
+}
+.experts__statistics-inner {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+  padding: 30px 80px;
+  border-radius: 16px;
+  background-color: #fff;
+  font-weight: 700;
+}
+.experts__statistics-number {
+  margin-bottom: 10px;
+  font-size: 36px;
+  color: var(--c-p);
+  text-align: center;
+}
+.experts__statistics-text {
+  text-transform: uppercase;
+}
+.experts__statistics-decor-one {
+  left: -25px;
+  bottom: -30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.experts__statistics-decor-two {
+  top: -40px;
+  left: 40%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+.experts__statistics-decor-three {
+  top: -10px;
+  right: -50px;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+.experts__video-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  cursor: pointer;
+}
+@media (max-width: 900.98px) {
+  .experts__video-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.experts__video-box img {
+  width: 100%;
+  height: auto;
 }
