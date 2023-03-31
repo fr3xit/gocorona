@@ -18,7 +18,11 @@
 			<div class="wrapper">
 				<!--@import "main.html"-->
 
-				<div class="content"></div>
+				<div class="content">
+					<!--@import "health.html"-->
+					<!--@import "experts.html"-->
+					<!--@import "availability.html"-->
+				</div>
 			</div>
 
 			<!--@import "footer.html"-->

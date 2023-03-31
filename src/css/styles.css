@@ -48,7 +48,6 @@ a {
 
 :root {
   font-family: "Rubik", sans-serif;
-  background-color: var(--c-light);
 }
 
 button {
@@ -128,6 +127,8 @@ button {
 }
 @media (max-width: 900.98px) {
   .content-box {
+    max-width: 80%;
+    margin: 0 auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -148,6 +149,26 @@ button {
 }
 .content-box__button {
   max-width: 200px;
+}
+
+.decor {
+  position: absolute;
+  background-color: var(--c-p);
+  border-radius: 16px;
+}
+.decor_small {
+  min-width: 70px;
+  min-height: 70px;
+}
+.decor_middle {
+  min-width: 100px;
+  min-height: 100px;
+  border-radius: 30px;
+}
+.decor_big {
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 30px;
 }
 
 .header {
@@ -404,10 +425,12 @@ button {
 .intro {
   overflow: hidden;
   width: 100%;
+  background-color: var(--c-light);
 }
 .intro__inner {
-  padding-top: 100px;
   position: relative;
+  z-index: 10;
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,8 +442,8 @@ button {
 .intro__inner::before {
   position: absolute;
   top: 0;
-  right: 25%;
   z-index: -1;
+  right: 25%;
   width: 100vw;
   height: 100vh;
   content: "";
@@ -459,9 +482,6 @@ button {
 }
 @media (max-width: 900.98px) {
   .intro__content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     max-width: 80%;
   }
 }
@@ -491,4 +511,50 @@ button {
   .intro__image {
     display: none;
   }
+}
+
+.health__inner {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+.health__image-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 900.98px) {
+  .health__image-box {
+    display: none;
+  }
+}
+.health__image-inner {
+  position: relative;
+}
+.health__image-inner img {
+  position: relative;
+  z-index: 100;
+}
+.health__decor-one {
+  top: -30px;
+  left: -50px;
+}
+.health__decor-two {
+  left: 0px;
+  bottom: 20px;
+}
+.health__decor-three {
+  right: -30px;
+  bottom: 25%;
 }

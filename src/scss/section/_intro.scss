@@ -2,9 +2,13 @@
 	overflow: hidden;
 	width: 100%;
 
+	background-color: var(--c-light);
+
 	&__inner {
-		padding-top: 100px;
 		position: relative;
+		z-index: 10;
+
+		padding-top: 100px;
 		display: flex;
 		align-items: center;
 		gap: 50px;
@@ -12,8 +16,8 @@
 		&::before {
 			position: absolute;
 			top: 0;
-			right: 25%;
 			z-index: -1;
+			right: 25%;
 
 			width: 100vw;
 			height: 100vh;
@@ -43,7 +47,7 @@
 		min-width: 200px;
 
 		@media (max-width: 900.98px) {
-			align-items: center;
+
 			max-width: 80%;
 		}
 	}
