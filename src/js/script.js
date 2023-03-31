@@ -14,7 +14,7 @@ const colorizeMenu = () => {
 document.querySelector('#burger').addEventListener('click', toggleMenu);
 
 window.addEventListener('scroll', () => {
-	if (scrollable.scrollTop > 0) {
+	if (scrollable.scrollTop > document.documentElement.clientHeight) {
 		header.classList.add('header_colorize');
 	} else {
 		header.classList.remove('header_colorize');

@@ -1,8 +1,13 @@
 .experts {
 	background-color: var(--c-light);
+	overflow: hidden;
 
 	&__inner {
 		padding: 100px 0;
+
+		@media (max-width: 900.98px) {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__content-box {
@@ -41,6 +46,7 @@
 		border-radius: 16px;
 		background-color: #fff;
 		font-weight: 700;
+
 	}
 
 	&__statistics-number {

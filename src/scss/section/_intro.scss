@@ -13,6 +13,10 @@
 		align-items: center;
 		gap: 50px;
 
+		@media (max-width: 900.98px) {
+			flex-wrap: wrap;
+		}
+
 		&::before {
 			position: absolute;
 			top: 0;
@@ -47,7 +51,7 @@
 		min-width: 200px;
 
 		@media (max-width: 900.98px) {
-
+			min-height: auto;
 			max-width: 80%;
 		}
 	}
@@ -60,6 +64,10 @@
 		padding-bottom: 40px;
 
 		cursor: pointer;
+
+		@media (max-width: 900.98px) {
+			justify-content: center;
+		}
 
 		&::before {
 			content: url('../img/icon/play.svg');
@@ -78,7 +86,8 @@
 		height: auto;
 
 		@media (max-width: 900.98px) {
-			display: none;
+			padding-top: 50px;
+			order: -1;
 		}
 	}
 }
