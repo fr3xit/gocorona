@@ -9,14 +9,11 @@
 // Base
 @import './base/var';
 @import './base/base';
-@import './base/custom-properties';
+@import './base/layout';
 
 // Module
-@import './module/desc';
-@import './module/decor';
+@import './module/content-box';
 
 // Section
 @import './section/header';
-@import './section/health';
-
-@import './section/footer';
+@import './section/intro';

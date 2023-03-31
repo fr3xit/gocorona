@@ -1,0 +1,32 @@
+.content-box {
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	@media (max-width: 900.98px) {
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 44px;
+		font-weight: 700;
+	}
+
+	&__title-accent_blue {
+		color: var(--c-s);
+	}
+
+	&__title-accent_red {
+		color: var(--c-p);
+	}
+
+	&__description {
+		color: var(--c-grey);
+	}
+
+
+	&__button {
+		max-width: 200px;
+	}
+}

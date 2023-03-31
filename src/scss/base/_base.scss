@@ -1,72 +1,49 @@
-.page {
+:root {
+	font-family: 'Rubik', sans-serif;
+
+	background-color: var(--c-light);
+}
+
+// Buttons
+button {
+	font-family: 'Raleway', sans-serif;
+}
+
+.button {
 	position: relative;
-	overflow: hidden;
-	min-height: 100vh;
+	z-index: 0;
 
-	@include flex;
-	flex-direction: column;
-
-	font-family: "Rubik", sans-serif;
-}
-
-.container {
-	max-width: calc($container + 30px);
-	padding: 0 15px;
-	margin: 0 auto;
-}
-
-.main {
-	flex: 1 1 100%;
-}
-
-img {
-	// fix отступа
-	vertical-align: top;
-
-	max-width: 100%;
-	height: auto;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-p {
-	color: $c-grey;
-}
-
-// Logo
-
-.logo {
-	&__link {
-		display: flex;
-		align-items: center;
-	}
-
-}
-
-// Button
-.btn {
-	display: inline-block;
 	padding: 15px 30px;
 
-	color: $c-light;
-	font-family: "Raleway", sans-serif;
 	text-transform: uppercase;
-	background-color: $c-primary;
+	font-weight: 700;
 	border-radius: 5px;
+	background-color: inherit;
+	border: 2px solid transparent;
 
-	&--blue {
-		background-color: $c-secondary;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	transition: var(--t-animation) ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		border-color: var(--c-dark);
+		border-radius: 30px;
+		text-shadow: 0 0 10px #000;
 	}
-}
 
-// Accent
-.accent {
-	color: $c-primary;
+	&_red {
+		background-color: var(--c-p);
 
-	&--blue {
-		color: $c-secondary;
+		&:hover {
+			box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 4px var(--c-p);
+		}
+	}
+
+	&_blue {
+		background-color: var(--c-s);
+
+		&:hover {
+			box-shadow: 0 0 25px 0 #000 inset, 0 0 10px 4px var(--c-s);
+		}
 	}
 }
